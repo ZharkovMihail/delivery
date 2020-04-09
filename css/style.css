@@ -47,6 +47,7 @@ body {
     /* width: 300px; */
     flex: 0.6;
     background-image: url(../img/search.svg);
+    margin-left: auto;
 }
 
 .buttons {
@@ -84,6 +85,10 @@ body {
     vertical-align: middle;
 }
 
+.button-card-text {
+    margin-right: 10px;
+}
+
 .promo {
     box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
     background: #FFF1B8 url(../img/pizza.png) no-repeat top -216px right -105px / 537px;
@@ -113,7 +118,6 @@ body {
 .section-heading {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 44px;
 }
 
@@ -124,6 +128,7 @@ body {
     line-height: 42px;
     margin: 0;
     color: #000000;
+    margin-right: 30px;
 }
 
 .cards {
@@ -140,12 +145,14 @@ body {
     overflow: hidden;
     margin-bottom: 30px;
     flex-basis: 31%;
+    text-decoration: none;
 }
 
 .card-image {
     width: 384px;
     height: 250px;
     object-fit: cover;
+    /* width: 100%; */
 }
 
 .card-text {
@@ -169,6 +176,10 @@ body {
     color: #000000;
 }
 
+.card-title-reg {
+    font-weight: 400;
+}
+
 .card-tag {
     font-style: normal;
     font-weight: normal;
@@ -186,6 +197,25 @@ body {
     flex-wrap: wrap;
 }
 
+.card-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.card-price-bold {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.card-price-bold {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    margin-left: 30px;
+}
+
 .raiting {
     margin-right: 26px;
     color: #FFC107;
@@ -199,6 +229,12 @@ body {
     color: #8C8C8C;
     font-size: 18px;
     line-height: 32px;
+}
+
+.ingredients {
+    font-size: 18px;
+    line-height: 21px;
+    color: #8C8C8C;
 }
 
 .category {
@@ -297,7 +333,7 @@ body {
     .container {
         max-width: 560px;
     }
-    .raiting {
+    .card .raiting {
         flex-basis: 100%;
     }
     .category {
