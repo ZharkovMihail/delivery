@@ -311,11 +311,14 @@ body {
 
 .modal-dialog {
     max-width: 780px;
+    max-height: 552px;
+    height: 95%;
     width: 95%;
     background: #FFFFFF;
     border-radius: 5px;
     margin: auto;
     padding: 40px 45px;
+    overflow-y: scroll;
 }
 
 .modal-header {
